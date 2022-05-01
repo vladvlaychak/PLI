@@ -1,4 +1,4 @@
-package com.psychologin.psychologinv111.ui.slideshow;
+package com.psychologin.psychologinv111.ui.info;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.psychologin.psychologinv111.databinding.FragmentSlideshowBinding;
+import com.psychologin.psychologinv111.databinding.FragmentHomeBinding;
 
-public class SlideshowFragment extends Fragment {
+public class InfoFragment extends Fragment {
 
-    private FragmentSlideshowBinding binding;
+    private FragmentHomeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        InfoViewModel homeViewModel =
+                new ViewModelProvider(this).get(InfoViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textHome;
+        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

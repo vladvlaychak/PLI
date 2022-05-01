@@ -13,13 +13,18 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.psychologin.psychologinv111.ui.gallery.GalleryFragment"
+        android:name="com.psychologin.psychologinv111.ui.Spravochnik.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.psychologin.psychologinv111.ui.slideshow.SlideshowFragment"
+        android:name="com.psychologin.psychologinv111.ui.test.SlideshowFragment"
         android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.psychologin.psychologinv111.ui.info.InfoFragment"
+        android:label="@string/menu_info"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>
