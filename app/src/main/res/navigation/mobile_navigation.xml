@@ -26,5 +26,5 @@
         android:id="@+id/nav_info"
         android:name="com.psychologin.psychologinv111.ui.info.InfoFragment"
         android:label="@string/menu_info"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_info" />
 </navigation>
